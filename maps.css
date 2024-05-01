@@ -1,0 +1,86 @@
+#map {
+      display:flex;
+      width: 1300px;
+      height: 530px;
+      position: absolute;
+      left: 41px;
+      top: 105px;
+      z-index: 1;
+    }
+
+    .custom-marker {
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .highlight-marker {
+      background-color: yellow;
+    }
+
+    .search-marker {
+      background-color: blue;
+    }
+
+    #search-bar {
+      position: absolute;
+      top: 20px;
+      left: 500px;
+      z-index: 1000;
+      width: 300px;
+      height:50px
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      z-index: 1001;
+      border: 1px solid #d4d4d4;
+      max-height: 150px;
+      overflow-y: auto;
+      background: white;
+      margin-top: 5px;
+      width: calc(100% - 1200px); /* Adjusted the width to match the search bar width */
+      top: 70px; /* Adjusted the top position to move the suggestions below the search bar */
+      left: 500px;
+    }
+
+    .autocomplete-item {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .autocomplete-item:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .bi-arrow-left-circle-fill,
+.svg-arrow {
+    left: 20px;
+  position: relative;
+  z-index: 2; /* Set a higher z-index value to bring the arrow on top */
+  top:14px
+}
+
+.arrow-container a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent container */
+  cursor: pointer; /* Show the hand cursor on hover */
+}
+   
+.arrow-container {
+      position: relative;
+      top: 4px;
+    }
+
+    .arrow-container svg {
+      width: 24px; /* Adjusted size to 24px */
+      height: auto;
+    }
+
+    .arrow-container a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
